@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body,
+#root,
+section.image-header > .container,
+section.image-header .title-header {
+  height: 100%;
+}
+.card-specialized {
+  overflow: hidden;
+  margin: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-specialized .wrap-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #263e3ead;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*----------------------- eff-skill -----------------------------*/
+
+.eff-skill {
+  width: 584px;
+  height: 200px;
+  background-color: white;
+  transform: rotateZ(51deg) translateX(46px);
+  transition: 0.4s;
+  position: absolute;
+  left: 203px;
+  opacity: 40%;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg-card-detail {
+  height: 25vh;
+  background-color: antiquewhite;
+}
+
+.card-specialized .wrap-card:hover .eff-skill {
+  left: -584px;
+}
+
+.card-specialized .wrap-card:hover h3 {
+  color: #f77187;
+}
+
+.item-spacialized .card-specialized {
+  height: 300px;
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 0px 0px;
+}
+
+.card-specialized h3 {
   color: white;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-black {
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bg-black.active-zone {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  visibility: visible;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  /* transition: 0.4s; */
+}
+
+.card-detail {
+  width: 47%;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 11%;
+  left: 27%;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+.card-detail.active-detail {
+  visibility: visible;
+  opacity: 1;
+}
+
+.item-spacialized .wrap-card > :nth-child(1) {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+
+/* ----------ACTIVE--------- */
+.img-active {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-detail {
+    width: 86%;
+    left: 7%;
   }
 }
