@@ -31,7 +31,8 @@ const AboutMe = (props) => {
             <div
               className="image-aboutme mb-4"
               style={{
-                backgroundImage: 'url("./image/2.jpg")',
+                backgroundImage:
+                  "url(" + process.env.PUBLIC_URL + "/image/2.jpg)",
               }}
             ></div>
           </div>

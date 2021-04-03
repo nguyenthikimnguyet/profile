@@ -12,7 +12,9 @@ const Specialized = (props) => {
       <div className="row item-spacialized justify-content-between">
         <div
           className="col-md-3 text-center card-specialized"
-          style={{ background: "url('./image/card-1.jpg')" }}
+          style={{
+            background: "url(" + process.env.PUBLIC_URL + "/image/card-1.jpg)",
+          }}
         >
           <div className="wrap-card">
             <div>
@@ -45,7 +47,9 @@ const Specialized = (props) => {
 
         <div
           className="col-md-3 text-center card-specialized"
-          style={{ background: "url('./image/card-2.jpg')" }}
+          style={{
+            background: "url(" + process.env.PUBLIC_URL + "/image/card-2.jpg)",
+          }}
         >
           <div className="wrap-card">
             <div>
@@ -77,7 +81,9 @@ const Specialized = (props) => {
         </div>
         <div
           className="col-md-3 text-center card-specialized"
-          style={{ background: "url('./image/card-3.jpg')" }}
+          style={{
+            background: "url(" + process.env.PUBLIC_URL + "/image/card-3.jpg)",
+          }}
         >
           <div className="wrap-card">
             <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Css.css";
+import "../../App.css";
 
 const Main = (props) => {
   const { children } = props;
@@ -8,7 +8,9 @@ const Main = (props) => {
     <>
       <section
         className="image-header pb-5"
-        style={{ background: 'url("./image/1.jpg")' }}
+        style={{
+          background: "url(" + process.env.PUBLIC_URL + "/image/1.jpg)",
+        }}
       >
         <nav
           id="navbar"
@@ -77,7 +79,10 @@ const Main = (props) => {
                 <div className="col-12 col-sm-6 ">
                   <div
                     className="avatar"
-                    style={{ backgroundImage: "url('./image/avatar1.jpg')" }}
+                    style={{
+                      backgroundImage:
+                        "url(" + process.env.PUBLIC_URL + "/image/avatar1.jpg)",
+                    }}
                   ></div>
                 </div>
                 <div className="col-12 col-sm-6 ">
@@ -135,10 +140,14 @@ const Main = (props) => {
        */}
       <iframe
         className="pdf"
-        src="/pdf/cv.pdf"
+        src="https://www.yumpu.com/en/embed/view/P2F87uvwUdD5SOis"
+        frameborder="0"
+        allowfullscreen="true"
+        allowtransparency="true"
         style={{ width: "100%", height: "100%" }}
-        frameBorder="0"
       ></iframe>
+
+      {/* <iframe src="https://www.yumpu.com/en/embed/view/P2F87uvwUdD5SOis" frameborder="0" allowfullscreen="true"  allowtransparency="true"></iframe><br><a href="https://www.yumpu.com/en/document/view/65463608/nguyen-nhut-tan-2-1" title="Nguyễn nhựt tân (2) (1)" target="_blank">Nguyễn nhựt tân (2) (1)</a> */}
       <div className="closePDF text-center">Close</div>
     </>
   );

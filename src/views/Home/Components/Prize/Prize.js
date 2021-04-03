@@ -14,7 +14,10 @@ const Prize = (props) => {
           <div className="card-prize ">
             <div
               className="image-prize mb-2"
-              style={{ backgroundImage: "url('./image/card-1.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url(" + process.env.PUBLIC_URL + "/image/card-1.jpg)",
+              }}
             ></div>
             <h5>this is prize</h5>
             <p>16/3/2012</p>
@@ -24,7 +27,10 @@ const Prize = (props) => {
           <div className="card-prize ">
             <div
               className="image-prize mb-2"
-              style={{ backgroundImage: "url('./image/card-2.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url(" + process.env.PUBLIC_URL + "/image/card-2.jpg)",
+              }}
             ></div>
             <h5>this is prize</h5>
             <p>16/3/2012</p>
@@ -34,7 +40,10 @@ const Prize = (props) => {
           <div className="card-prize ">
             <div
               className="image-prize mb-2"
-              style={{ backgroundImage: "url('./image/card-3.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url(" + process.env.PUBLIC_URL + "/image/card-3.jpg)",
+              }}
             ></div>
             <h5>this is prize</h5>
             <p>16/3/2012</p>

@@ -48,7 +48,10 @@ const ActiveMe = (props) => {
             <div className="wrap-card-active">
               <div
                 className="img-active mb-2 mb-sm-3"
-                style={{ backgroundImage: "url('./image/card-1.jpg')" }}
+                style={{
+                  backgroundImage:
+                    "url(" + process.env.PUBLIC_URL + "/image/card-1.jpg)",
+                }}
               ></div>
               <h5>this is title</h5>
               <p>this is contents ascacas acacacas acacas acasca acac</p>
@@ -61,7 +64,10 @@ const ActiveMe = (props) => {
             <div className="wrap-card-active">
               <div
                 className="img-active mb-2 mb-sm-3"
-                style={{ backgroundImage: "url('./image/card-2.jpg')" }}
+                style={{
+                  backgroundImage:
+                    "url(" + process.env.PUBLIC_URL + "/image/card-2.jpg)",
+                }}
               ></div>
               <h5>this is title</h5>
               <p>this is contents ascacas acacacas acacas acasca acac</p>
@@ -74,7 +80,10 @@ const ActiveMe = (props) => {
             <div className="wrap-card-active">
               <div
                 className="img-active mb-2 mb-sm-3"
-                style={{ backgroundImage: "url('./image/card-3.jpg')" }}
+                style={{
+                  backgroundImage:
+                    "url(" + process.env.PUBLIC_URL + "/image/card-3.jpg)",
+                }}
               ></div>
               <h5>this is title</h5>
               <p>this is contents ascacas acacacas acacas acasca acac</p>
@@ -87,7 +96,10 @@ const ActiveMe = (props) => {
             <div className="wrap-card-active">
               <div
                 className="img-active mb-2 mb-sm-3"
-                style={{ backgroundImage: "url('./image/card-1.jpg')" }}
+                style={{
+                  backgroundImage:
+                    "url(" + process.env.PUBLIC_URL + "/image/card-1.jpg)",
+                }}
               ></div>
               <h5>this is title</h5>
               <p>this is contents ascacas acacacas acacas acasca acac</p>
@@ -100,7 +112,10 @@ const ActiveMe = (props) => {
             <div className="wrap-card-active">
               <div
                 className="img-active mb-2 mb-sm-3"
-                style={{ backgroundImage: "url('./image/card-3.jpg')" }}
+                style={{
+                  backgroundImage:
+                    "url(" + process.env.PUBLIC_URL + "/image/card-3.jpg)",
+                }}
               ></div>
               <h5>this is title</h5>
               <p>this is contents ascacas acacacas acacas acasca acac</p>
