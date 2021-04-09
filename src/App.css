@@ -14,6 +14,37 @@ section.image-header .title-header {
   margin: 15px;
 }
 
+.type-write {
+  padding: 2px 2px 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 555px;
+  border-right: 2px solid;
+  border-right-color: rgba(255, 255, 255, 0.75);
+}
+
+.anim {
+  animation: typewriter 2s steps(30) 1s normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 555px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .card-specialized .wrap-card {
   position: relative;
   width: 100%;
@@ -75,7 +106,6 @@ section.image-header .title-header {
   position: fixed;
   top: 0px;
   z-index: 2;
-  /* transition: 0.4s; */
 }
 
 .card-detail {

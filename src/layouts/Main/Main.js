@@ -59,7 +59,7 @@ const Main = (props) => {
         <div className="container">
           <div className="row title-header align-items-center">
             <div className="col-md-7">
-              <h1 className="mb-2">Nguyễn Thị Kim Nguyệt</h1>
+              <h1 className="mb-2 type-write anim">Nguyễn Thị Kim Nguyệt</h1>
               <h2 className="mb-5">Law values ​​justice</h2>
               <button type="button" className="btn btn-success ">
                 View CV
