@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import RouterWithLayout from "./components/Routerwithlayout";
-import { Switch } from "react-router-dom";
-import { Main } from "./layouts";
-import { Home } from "./views";
+import React from 'react';
+import PropTypes from 'prop-types';
+import RouterWithLayout from './components/Routerwithlayout';
+import { Switch } from 'react-router-dom';
+import { Main } from './layouts';
+import { Home } from './views';
 
 const Routes = (props) => {
-  return (
-    <Switch>
-      <RouterWithLayout component={Home} layout={Main} exact path="/profile" />
-    </Switch>
-  );
+    return (
+        <Switch>
+            <RouterWithLayout component={Home} layout={Main} exact path="/" />
+        </Switch>
+    );
 };
 
 Routes.propTypes = {};
